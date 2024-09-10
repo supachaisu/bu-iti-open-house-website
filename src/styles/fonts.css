@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src:
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_Th.eot"),
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_Th.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/line-seed-sans-th/WOFF2/LINESeedSansTH_W_Th.woff2")
+      format("woff2"),
+    url("/assets/fonts/line-seed-sans-th/WOFF/LINESeedSansTH_W_Th.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src:
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_Rg.eot"),
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_Rg.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/line-seed-sans-th/WOFF2/LINESeedSansTH_W_Rg.woff2")
+      format("woff2"),
+    url("/assets/fonts/line-seed-sans-th/WOFF/LINESeedSansTH_W_Rg.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src:
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_Bd.eot"),
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_Bd.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/line-seed-sans-th/WOFF2/LINESeedSansTH_W_Bd.woff2")
+      format("woff2"),
+    url("/assets/fonts/line-seed-sans-th/WOFF/LINESeedSansTH_W_Bd.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src:
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_XBd.eot"),
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_XBd.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/line-seed-sans-th/WOFF2/LINESeedSansTH_W_XBd.woff2")
+      format("woff2"),
+    url("/assets/fonts/line-seed-sans-th/WOFF/LINESeedSansTH_W_XBd.woff")
+      format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINE Seed Sans TH";
+  src:
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_He.eot"),
+    url("/assets/fonts/line-seed-sans-th/EOT/LINESeedSansTH_W_He.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/line-seed-sans-th/WOFF2/LINESeedSansTH_W_He.woff2")
+      format("woff2"),
+    url("/assets/fonts/line-seed-sans-th/WOFF/LINESeedSansTH_W_He.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
