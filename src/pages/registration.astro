@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Container from '../components/container.astro'
+---
+
+<Layout title="Registration | BU ITI Open House">
+  <main class="py-6 lg:py-10">
+    <Container>
+      <h1 class="text-center text-2xl font-extrabold lg:text-3xl">
+        ลงทะเบียนสำหรับการเข้าร่วมงาน
+      </h1>
+      <form class="mt-6 lg:mt-10">
+        <div class="space-y-12">
+          <div class="pb-6">
+            <h2 class="text-base font-semibold leading-7 text-gray-900">
+              Personal Information
+            </h2>
+            <p class="mt-1 text-sm leading-6 text-gray-600">
+              ข้อมูลนี้ถูกจัดเก็บเพื่อการตรวจสอบความถูกต้องของผู้เข้าร่วมงาน
+            </p>
+
+            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div class="sm:col-span-3">
+                <label
+                  for="first-name"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >ชื่อ</label
+                >
+                <div class="mt-2">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="given-name"
+                    required
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div class="sm:col-span-3">
+                <label
+                  for="last-name"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >นามสกุล</label
+                >
+                <div class="mt-2">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autocomplete="family-name"
+                    required
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <div class="sm:col-span-4">
+                <label
+                  for="email"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >อีเมล</label
+                >
+                <div class="mt-2">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 lg:mt-6 flex items-center justify-start gap-x-6">
+          <button
+            type="submit"
+            class="rounded-full bg-gray-950 px-3 py-2 lg:px-4 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+            >Submit</button
+          >
+        </div>
+      </form>
+    </Container>
+  </main>
+</Layout>
