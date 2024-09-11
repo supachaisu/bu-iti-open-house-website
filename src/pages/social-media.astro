@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Container from '../components/container.astro'
+---
+
+<Layout
+  title="Social Media | BU ITI Open House"
+  description="Social Media ของงาน BU ITI Open House"
+>
+  <main class="py-6 lg:py-10">
+    <Container>
+      <h1 class="text-center text-2xl font-extrabold lg:text-3xl">
+        Social Media
+      </h1>
+      <ul class="mt-4 space-y-4 lg:mt-8 lg:space-y-8">
+        <li>
+          <a
+            href="https://www.facebook.com/BUITInnovation"
+            target="_blank"
+            class="flex w-fit items-center gap-x-4 font-bold hover:text-gray-600 hover:underline lg:text-lg"
+          >
+            <svg class="size-8 flex-shrink-0">
+              <use href="/assets/icons/facebook.svg#facebook"></use>
+            </svg>
+            คณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/buitistudentact/"
+            target="_blank"
+            class="flex w-fit items-center gap-x-4 font-bold hover:text-gray-600 hover:underline lg:text-lg"
+          >
+            <svg class="size-8 flex-shrink-0">
+              <use href="/assets/icons/instagram.svg#instagram"></use>
+            </svg>
+            buitistudentact
+          </a>
+        </li>
+      </ul>
+    </Container>
+  </main>
+</Layout>
