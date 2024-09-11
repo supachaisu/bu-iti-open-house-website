@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Container from '../components/container.astro'
+
+const schedule = [
+  {
+    time: '8:00 - 9:00',
+    event: 'Check in',
+  },
+  {
+    time: '9:00 - 12:00',
+    event: 'Workshops and Activities',
+  },
+  {
+    time: '12:00 - 13:00',
+    event: 'Lunch',
+  },
+  {
+    time: '12:00 - 15:00',
+    event: 'Workshops and Activities',
+  },
+  {
+    time: '15:00 - 16:00',
+    event: 'ITI Exhibition',
+  },
+]
+---
+
+<Layout title="Schedule | BU ITI Open House">
+  <main class="py-6 lg:py-10">
+    <Container>
+      <h1 class="text-center text-2xl font-extrabold lg:text-3xl">กำหนดการ</h1>
+      <div class="mt-6 lg:mt-10">
+        <div>
+          <h2 class="text-lg font-bold lg:text-xl">
+            วันที่ 29–31 สิงหาคม 2567
+          </h2>
+          <ul class="mt-8 space-y-4">
+            {
+              schedule.map((item) => (
+                <li class="grid grid-cols-2 rounded px-4 py-2 odd:bg-white even:bg-gray-50">
+                  <span>{item.time}</span>
+                  <span>{item.event}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
