@@ -11,290 +11,285 @@ import Container from '../components/container.astro'
   <main>
     <!-- Hero Section -->
     <section>
-      <Container>
-        <h1 class="py-6 text-center text-3xl font-black lg:py-8 lg:text-4xl">
-          BU ITI Open House
-        </h1>
+      <h1 class="py-6 text-center text-3xl font-black lg:py-8 lg:text-4xl">
+        BU ITI Open House
+      </h1>
 
-        <!-- Isometric Laptop Animation -->
-        <div class="mx-auto w-fit">
-          <script
-            is:inline
-            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-            type="module"></script>
+      <!-- Isometric Laptop Animation -->
+      <div class="mx-auto w-fit">
+        <script
+          is:inline
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"></script>
 
-          <dotlottie-player
-            src="/assets/animation/isometric-laptop.json"
-            background="transparent"
-            speed="1"
-            style="width: 300px; height: 300px;"
-            autoplay></dotlottie-player>
-        </div>
-        <!-- End of Isometric Laptop Animation -->
+        <dotlottie-player
+          src="/assets/animation/isometric-laptop.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px;"
+          autoplay></dotlottie-player>
+      </div>
+      <!-- End of Isometric Laptop Animation -->
 
-        <div class="lg:mt-2">
-          <p class="text-center text-xl font-bold">มาลองเล่นให้เป็นโปร!</p>
-          <p class="my-4 text-center">29–31 สิงหาคม 2567</p>
-          <a
-            href={navigationMap.get('ลงทะเบียน')}
-            data-astro-prefetch
-            class="mx-auto block w-fit"
+      <div class="lg:mt-2">
+        <p class="text-center text-xl font-bold">มาลองเล่นให้เป็นโปร!</p>
+        <p class="my-4 text-center">29–31 สิงหาคม 2567</p>
+        <a
+          href={navigationMap.get('ลงทะเบียน')}
+          data-astro-prefetch
+          class="mx-auto block w-fit"
+        >
+          <button
+            type="button"
+            class="mx-auto mt-4 block rounded-full bg-gray-950 px-4 py-2.5 text-lg font-bold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+            >ลงทะเบียน</button
           >
-            <button
-              type="button"
-              class="mx-auto mt-4 block rounded-full bg-gray-950 px-4 py-2.5 text-lg font-bold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
-              >ลงทะเบียน</button
-            >
-          </a>
+        </a>
 
-          <!-- End of Hero Section -->
+        <!-- End of Hero Section -->
 
-          <section
-            class="mt-16 space-y-16 bg-gray-100 px-4 py-16 sm:px-8 lg:mt-20 lg:space-y-24 lg:py-24"
+        <section
+          class="mt-16 space-y-16 bg-gray-100 px-4 py-16 sm:px-8 lg:mt-20 lg:space-y-24 lg:py-24"
+        >
+          <div
+            class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
           >
-            <div
-              class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
+            <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
+              เก็บ e-Certificates เข้าพอร์ตกันแบบจุกๆ
+            </h2>
+            <p class="mt-4 lg:mt-8 lg:text-lg">
+              ผู้เข้าร่วมเวิร์คช็อปและกิจกรรมจะได้รับ <strong
+                >e-Certificates</strong
+              > ไว้เก็บใน Portfolio ของตนเอง
+            </p>
+            <a
+              href={navigationMap.get('เวิร์คช็อปและกิจกรรม')}
+              data-astro-prefetch
+              class="mt-4 block w-fit lg:mt-8"
             >
-              <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
-                เก็บ e-Certificates เข้าพอร์ตกันแบบจุกๆ
-              </h2>
-              <p class="mt-4 lg:mt-8 lg:text-lg">
-                ผู้เข้าร่วมเวิร์คช็อปและกิจกรรมจะได้รับ <strong
-                  >e-Certificates</strong
-                > ไว้เก็บใน Portfolio ของตนเอง
-              </p>
-              <a
-                href={navigationMap.get('เวิร์คช็อปและกิจกรรม')}
-                data-astro-prefetch
-                class="mt-4 block w-fit lg:mt-8"
+              <button
+                type="button"
+                class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
+                >เวิร์คช็อปและกิจกรรม</button
               >
-                <button
-                  type="button"
-                  class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
-                  >เวิร์คช็อปและกิจกรรม</button
-                >
-              </a>
-            </div>
+            </a>
+          </div>
 
-            <div
-              class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
-            >
-              <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
-                รับของที่ระลึกภายในงาน
-              </h2>
-              <p class="mt-4 lg:mt-8 lg:text-lg">
-                ร่วมกิจกรรม และรับของที่ระลึกสุด exclusive จาก BU ITI
-                ตลอดทั้งวัน
-              </p>
-              <a
-                href={navigationMap.get('กำหนดการ')}
-                data-astro-prefetch
-                class="mt-4 block w-fit lg:mt-8"
-              >
-                <button
-                  type="button"
-                  class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
-                  >กำหนดการ</button
-                >
-              </a>
-            </div>
-
-            <div
-              class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
-            >
-              <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
-                เติมความรู้กับวิทยากรมืออาชีพ
-              </h2>
-              <p class="mt-4 lg:mt-8 lg:text-lg">
-                ร่วมฟังคำแนะนำจากวิทยากรมืออาชีพที่มีประสบการณ์จากด้านต่างๆในสายงาน
-                IT
-              </p>
-              <a
-                href={navigationMap.get('วิทยากร')}
-                data-astro-prefetch
-                class="mt-4 block w-fit lg:mt-8"
-              >
-                <button
-                  type="button"
-                  class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
-                  >วิทยากร</button
-                >
-              </a>
-            </div>
-
-            <div
-              class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
-            >
-              <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
-                ภาพบรรยากาศของงานที่ผ่านมา
-              </h2>
-              <p class="mt-4 lg:mt-8 lg:text-lg">
-                ระหว่างรอวันงานมาถึง มาลองชมบรรยากาศของงานครั้งที่ผ่านมากันเลย
-              </p>
-              <a
-                href={navigationMap.get('แกลเลอรี่')}
-                data-astro-prefetch
-                class="mt-4 block w-fit lg:mt-8"
-              >
-                <button
-                  type="button"
-                  class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
-                  >แกลเลอรี่</button
-                >
-              </a>
-            </div>
-
-            <div
-              class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
-            >
-              <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
-                มีคำถามสงสัยใช่มั้ย?
-              </h2>
-              <p class="mt-4 lg:mt-8 lg:text-lg">
-                อ่านคำถามที่พบบ่อย พร้อมคำตอบ กันได้เลย
-              </p>
-              <a
-                href={navigationMap.get('คำถามที่พบบ่อย')}
-                data-astro-prefetch
-                class="mt-4 block w-fit lg:mt-8"
-              >
-                <button
-                  type="button"
-                  class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
-                  >คำถามที่พบบ่อย</button
-                >
-              </a>
-            </div>
-          </section>
-
-          <section class="mt-16 lg:mt-20">
-            <Container>
-              <h2 class="text-center text-2xl font-extrabold lg:text-3xl">
-                ผู้สนับสนุน
-              </h2>
-              <ul
-                class="mt-8 grid gap-8 sm:grid-cols-3 lg:mt-12 lg:grid-cols-4"
-              >
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/mixue.webp"
-                    alt="Mixue"
-                    class="-ml-2 h-10"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/hp.webp"
-                    alt="HP"
-                    class="h-12"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/microsoft.webp"
-                    alt="Microsoft"
-                    class="h-8 lg:mt-2"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/starbucks.webp"
-                    alt="Starbucks"
-                    class="h-12"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/fastwork.webp"
-                    alt="Fastwork"
-                    class="h-12"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/google.webp"
-                    alt="Google"
-                    class="mt-2 h-10"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/aws.webp"
-                    alt="AWS"
-                    class="mt-2 h-10"
-                  />
-                </li>
-                <li class="mx-auto w-fit">
-                  <img
-                    src="/assets/images/sponsors/cloudflare.webp"
-                    alt="Cloudflare"
-                    class="mt-2 h-10"
-                  />
-                </li>
-              </ul>
-            </Container>
-          </section>
-
-          <section
-            class="mt-16 space-y-16 bg-gray-100 px-4 py-16 sm:px-8 lg:mt-20 lg:space-y-24 lg:py-24"
+          <div
+            class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
           >
-            <Container>
-              <h2 class="text-center text-2xl font-extrabold lg:text-3xl">
-                การเดินทาง
-              </h2>
-              <div class="mt-8 space-y-6 lg:mt-12">
-                <div>
-                  <h3 class="text-lg font-bold">รถเมล์</h3>
-                  <p>สาย 39 ปอ.510 / ปอ.520</p>
-                </div>
-                <div>
-                  <h3 class="text-lg font-bold">รถตู้</h3>
-                  <ul class="list-disc pl-5">
-                    <li>
-                      สาย ต.85-93 (ฝั่งเกาะพญาไท): อนุสาวรีย์ชัยสมรภูมิ-มธ.
-                      (ศูนย์รังสิต) - ใกล้ BTS อนุสาวรีย์ชัยสมรภูมิ
-                    </li>
-                    <li>สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)</li>
-                    <li>
-                      สาย 1008 (อยู่ตรงข้างฟิวเจอร์พาร์ค รังสิต) ช่วงรังสิต-มธ.
-                      (ศูนย์รังสิต)
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="text-lg font-bold">รถไฟฟ้าสายสีเขียว (BTS)</h3>
-                  <ul class="list-disc pl-5">
-                    <li>ลงสถานีหมอชิต (ทางออก 3,4) ต่อรถตู้สาย ต. 118-1</li>
-                    <li>
-                      ลงสถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3,4) ต่อรถตู้สาย
-                      ต.85-93 (ฝั่งเกาะพญาไท)
-                    </li>
-                    <li>ลงสถานีแยกคปอ. (ทางออก 1,3) ต่อรถเมล์ สาย 39, 520</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="text-lg font-bold">รถไฟฟ้าสายสีน้ำเงิน (MRT)</h3>
-                  <p>
-                    ลงสถานีจตุจักร (ทางออก 3,4) ต่อรถตู้สาย ต.118-1 หมอชิต-มธ.
-                    (ศูนย์รังสิต)
-                  </p>
-                </div>
-                <div>
-                  <h3 class="text-lg font-bold">รถไฟฟ้าสายสีแดง (SRT)</h3>
-                  <p>ลงสถานี รังสิต ทางออกที่ 3 ต่อรถสองแถวสาย รังสิต-จารุศร</p>
-                </div>
+            <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
+              รับของที่ระลึกภายในงาน
+            </h2>
+            <p class="mt-4 lg:mt-8 lg:text-lg">
+              ร่วมกิจกรรม และรับของที่ระลึกสุด exclusive จาก BU ITI ตลอดทั้งวัน
+            </p>
+            <a
+              href={navigationMap.get('กำหนดการ')}
+              data-astro-prefetch
+              class="mt-4 block w-fit lg:mt-8"
+            >
+              <button
+                type="button"
+                class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
+                >กำหนดการ</button
+              >
+            </a>
+          </div>
+
+          <div
+            class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
+          >
+            <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
+              เติมความรู้กับวิทยากรมืออาชีพ
+            </h2>
+            <p class="mt-4 lg:mt-8 lg:text-lg">
+              ร่วมฟังคำแนะนำจากวิทยากรมืออาชีพที่มีประสบการณ์จากด้านต่างๆในสายงาน
+              IT
+            </p>
+            <a
+              href={navigationMap.get('วิทยากร')}
+              data-astro-prefetch
+              class="mt-4 block w-fit lg:mt-8"
+            >
+              <button
+                type="button"
+                class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
+                >วิทยากร</button
+              >
+            </a>
+          </div>
+
+          <div
+            class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
+          >
+            <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
+              ภาพบรรยากาศของงานที่ผ่านมา
+            </h2>
+            <p class="mt-4 lg:mt-8 lg:text-lg">
+              ระหว่างรอวันงานมาถึง มาลองชมบรรยากาศของงานครั้งที่ผ่านมากันเลย
+            </p>
+            <a
+              href={navigationMap.get('แกลเลอรี่')}
+              data-astro-prefetch
+              class="mt-4 block w-fit lg:mt-8"
+            >
+              <button
+                type="button"
+                class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
+                >แกลเลอรี่</button
+              >
+            </a>
+          </div>
+
+          <div
+            class="mx-auto rounded-3xl bg-white px-4 py-8 sm:max-w-xl sm:px-8 sm:py-16 lg:max-w-3xl lg:px-8 lg:py-16"
+          >
+            <h2 class="text-balance text-2xl font-extrabold lg:text-3xl">
+              มีคำถามสงสัยใช่มั้ย?
+            </h2>
+            <p class="mt-4 lg:mt-8 lg:text-lg">
+              อ่านคำถามที่พบบ่อย พร้อมคำตอบ กันได้เลย
+            </p>
+            <a
+              href={navigationMap.get('คำถามที่พบบ่อย')}
+              data-astro-prefetch
+              class="mt-4 block w-fit lg:mt-8"
+            >
+              <button
+                type="button"
+                class="rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 lg:text-base"
+                >คำถามที่พบบ่อย</button
+              >
+            </a>
+          </div>
+        </section>
+
+        <section class="mt-16 lg:mt-20">
+          <Container>
+            <h2 class="text-center text-2xl font-extrabold lg:text-3xl">
+              ผู้สนับสนุน
+            </h2>
+            <ul class="mt-8 grid gap-8 sm:grid-cols-3 lg:mt-12 lg:grid-cols-4">
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/mixue.webp"
+                  alt="Mixue"
+                  class="-ml-2 h-10"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/hp.webp"
+                  alt="HP"
+                  class="h-12"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/microsoft.webp"
+                  alt="Microsoft"
+                  class="h-8 lg:mt-2"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/starbucks.webp"
+                  alt="Starbucks"
+                  class="h-12"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/fastwork.webp"
+                  alt="Fastwork"
+                  class="h-12"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/google.webp"
+                  alt="Google"
+                  class="mt-2 h-10"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/aws.webp"
+                  alt="AWS"
+                  class="mt-2 h-10"
+                />
+              </li>
+              <li class="mx-auto w-fit">
+                <img
+                  src="/assets/images/sponsors/cloudflare.webp"
+                  alt="Cloudflare"
+                  class="mt-2 h-10"
+                />
+              </li>
+            </ul>
+          </Container>
+        </section>
+
+        <section
+          class="mt-16 space-y-16 bg-gray-100 px-4 py-16 sm:px-8 lg:mt-20 lg:space-y-24 lg:py-24"
+        >
+          <Container>
+            <h2 class="text-center text-2xl font-extrabold lg:text-3xl">
+              การเดินทาง
+            </h2>
+            <div class="mt-8 space-y-6 lg:mt-12">
+              <div>
+                <h3 class="text-lg font-bold">รถเมล์</h3>
+                <p>สาย 39 ปอ.510 / ปอ.520</p>
               </div>
-              <iframe
-                class="mt-8 aspect-video w-full lg:mt-16"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3870.6371285140585!2d100.615365!3d14.039511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2801cc4ec2aff%3A0xbfec6d0816ab0b14!2sBangkok%20University!5e0!3m2!1sen!2sus!4v1725971338781!5m2!1sen!2sus"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </Container>
-          </section>
-        </div></Container
-      >
+              <div>
+                <h3 class="text-lg font-bold">รถตู้</h3>
+                <ul class="list-disc pl-5">
+                  <li>
+                    สาย ต.85-93 (ฝั่งเกาะพญาไท): อนุสาวรีย์ชัยสมรภูมิ-มธ.
+                    (ศูนย์รังสิต) - ใกล้ BTS อนุสาวรีย์ชัยสมรภูมิ
+                  </li>
+                  <li>สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)</li>
+                  <li>
+                    สาย 1008 (อยู่ตรงข้างฟิวเจอร์พาร์ค รังสิต) ช่วงรังสิต-มธ.
+                    (ศูนย์รังสิต)
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">รถไฟฟ้าสายสีเขียว (BTS)</h3>
+                <ul class="list-disc pl-5">
+                  <li>ลงสถานีหมอชิต (ทางออก 3,4) ต่อรถตู้สาย ต. 118-1</li>
+                  <li>
+                    ลงสถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3,4) ต่อรถตู้สาย ต.85-93
+                    (ฝั่งเกาะพญาไท)
+                  </li>
+                  <li>ลงสถานีแยกคปอ. (ทางออก 1,3) ต่อรถเมล์ สาย 39, 520</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">รถไฟฟ้าสายสีน้ำเงิน (MRT)</h3>
+                <p>
+                  ลงสถานีจตุจักร (ทางออก 3,4) ต่อรถตู้สาย ต.118-1 หมอชิต-มธ.
+                  (ศูนย์รังสิต)
+                </p>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">รถไฟฟ้าสายสีแดง (SRT)</h3>
+                <p>ลงสถานี รังสิต ทางออกที่ 3 ต่อรถสองแถวสาย รังสิต-จารุศร</p>
+              </div>
+            </div>
+            <iframe
+              class="mt-8 aspect-video w-full lg:mt-16"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3870.6371285140585!2d100.615365!3d14.039511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2801cc4ec2aff%3A0xbfec6d0816ab0b14!2sBangkok%20University!5e0!3m2!1sen!2sus!4v1725971338781!5m2!1sen!2sus"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </Container>
+        </section>
+      </div>
     </section>
-  </main></Layout
->
+  </main>
+</Layout>
