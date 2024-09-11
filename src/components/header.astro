@@ -1,5 +1,8 @@
 ---
 import { navigation, navigationMap } from '../routes'
+import { clsx } from 'clsx'
+
+const currentPath = Astro.url.pathname
 ---
 
 <div class="pb-32">
@@ -50,7 +53,12 @@ import { navigation, navigationMap } from '../routes'
                 <a
                   href={href}
                   data-astro-prefetch
-                  class="text-sm font-bold leading-6 text-gray-900 underline hover:text-gray-500"
+                  class={clsx(
+                    'text-sm font-bold leading-6',
+                    currentPath === href
+                      ? 'text-gray-900'
+                      : 'text-gray-500 underline hover:text-gray-900',
+                  )}
                 >
                   {name}
                 </a>
@@ -119,7 +127,12 @@ import { navigation, navigationMap } from '../routes'
                   <a
                     href={href}
                     data-astro-prefetch
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                    class={clsx(
+                      '-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7',
+                      currentPath === href
+                        ? 'text-gray-900'
+                        : 'text-gray-500 underline hover:text-gray-900 hover:bg-gray-50',
+                    )}
                   >
                     {name}
                   </a>
