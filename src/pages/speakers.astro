@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Container from '../components/container.astro'
+
+const speakers = [
+  {
+    name: 'คุณฉัตรชัย กําลังเดช',
+    image: '/assets/images/speakers/chatchai.webp',
+    description: 'Senior Solutions Architect บริษัท Amazon Web Services',
+  },
+  {
+    name: 'คุณพีรพัทธ์ จารุเพียรเลิศ',
+    image: '/assets/images/speakers/peeraphat.webp',
+    description:
+      'IT Project and Portfolio Management บริษัท Asset World Corporation',
+  },
+  {
+    name: 'คุณณรงค์ฤทธิ์ ช่วงชู',
+    image: '/assets/images/speakers/narongrit.webp',
+    description: 'Web Developer at NECTEC ThaiSC สวทช',
+  },
+  {
+    name: 'คุณวีรวัฒน์ จีนสุกแสง',
+    image: '/assets/images/speakers/veerawat.webp',
+    description:
+      'บริษัท Microsoft Thailand - Azure Ranger (Microsoft Cloud Solution Consultant)',
+  },
+]
+---
+
+<Layout
+  title="วิทยากร | BU ITI Open House"
+  description="รายชื่อวิทยากรทั้งหมดในงาน BU ITI Open House"
+>
+  <main class="py-6 lg:py-10">
+    <Container>
+      <h1 class="text-center text-2xl font-extrabold lg:text-3xl">วิทยากร</h1>
+      <div class="mt-8 lg:mt-16">
+        <ul class="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+          {
+            speakers.map((speaker) => (
+              <li>
+                <div class="mx-auto max-w-sm">
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    class="mx-auto rounded-lg"
+                  />
+                  <div class="mx-auto mt-4">
+                    <h3 class="text-lg font-bold">{speaker.name}</h3>
+                    <p>{speaker.description}</p>
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </Container>
+  </main>
+</Layout>
